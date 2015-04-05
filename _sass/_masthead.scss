@@ -57,7 +57,7 @@
 .site-title {
   margin-bottom: 0;
   @include animation-duration(1s);
-    @include animation-delay(.75s);
+    @include animation-delay(0.05s);
   a {
     color: $black;
   }
@@ -74,7 +74,7 @@
   font-weight: 400;
   font-style: italic;
   @include animation-duration(1s);
-    @include animation-delay(1s);
+    @include animation-delay(0.75s);
   @include media($medium) {
     @include font-size(20);
   }

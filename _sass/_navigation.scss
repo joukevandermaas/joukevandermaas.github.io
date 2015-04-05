@@ -10,11 +10,11 @@
     width: 100%;
     vertical-align: top;
     margin: 0 0 50px;
-    padding: 4px 20px;
+    padding: 1px 260px 6px 260px;
     background-color: $black;
     @include media($medium) {
       width: auto;
-      @include rounded(0 0 10px 10px);
+      @include rounded(0 0 2px 2px);
     }
     @include clearfix;
   }
@@ -22,6 +22,8 @@
     display: block;
     float: left;
     list-style: none;
+    margin: 0 8px;
+    width: 100px;
     text-align: center;
     @include font-size(24,no);
     text-transform: uppercase;
@@ -42,7 +44,7 @@
       padding: 6px 10px;
     }
     color: $white;
-    @include rounded(4px);
+    @include rounded(1px);
     &:hover {
       background-color: lighten($black, 10);
     }
