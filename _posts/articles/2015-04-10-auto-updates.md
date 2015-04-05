@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 tags: [easymark]
 category: articles
 excerpt: In which I ponder usability
@@ -9,12 +9,10 @@ title: There's an update available, install now?
 
 As I was working on [my markdown
 viewer](https://github.com/joukevandermaas/easymark), I realized it needed
-automatic updates.  My plan is to keep releasing incremental improvements, so I
-could get something out there early and improve based on usage, rather than
-design the whole thing up front. Since I cannot expect people to be excited
-about something as mundane as a markdown viewer, auto updates are a must.  As I
-was considering how this should work, I went over some of the existing auto
-update strategies I've seen used. 
+automatic updates.  My plan is to keep releasing incremental improvements.
+Since I cannot expect people to be excited about something as mundane as a
+markdown viewer, auto updates are a must.  As I was considering how this should
+work, I went over some of the existing auto update strategies I've seen used. 
 
 # Show a message, send to download page
 
