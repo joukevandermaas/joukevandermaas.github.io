@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 tags: [easymark]
 category: articles
 excerpt: In which I ponder usability
