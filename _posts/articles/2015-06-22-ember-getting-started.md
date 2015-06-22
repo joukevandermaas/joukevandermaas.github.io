@@ -7,7 +7,7 @@ category: articles
 excerpt: On the various components of Ember and how they relate
 title: Getting started with Ember.js: Part 1
 ---
-
+{% raw %}
 [Ember] is a javascript framework for creating single page applications in an
 easy and guided way. It has been around for a while and is relatively stable,
 but the preferred way of building applications has shifted somewhat as the
@@ -157,3 +157,8 @@ will find that most of their use-cases are captured by services and views. If
 you do need them, beware that they will disappear sooner or later and keep
 looking out for a better way to structure your app.
 
+# Next Time
+
+Next time, we'll look into how your Ember app is structured and we'll get
+started on a sample project that brings everything together.
+{% endraw %}
