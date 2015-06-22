@@ -7,7 +7,7 @@ category: articles
 excerpt: On the various components of Ember and how they relate
 title: Getting started with Ember.js: Part 1
 ---
-{% raw %}
+
 [Ember] is a javascript framework for creating single page applications in an
 easy and guided way. It has been around for a while and is relatively stable,
 but the preferred way of building applications has shifted somewhat as the
@@ -51,6 +51,7 @@ blog posts or the official guides and more or less know what to do.
 
 ## Templates 
 
+{% raw %}
 The most obvious part of any Ember application is its templates. These are
 declarative html-like descriptions called HTMLBars (or Handlebars) of how your
 application should render. Dynamic parts are typically enclosed in double curly
@@ -63,6 +64,7 @@ They can do all the things you'd expect from a modern templating tool, such as
 dynamic bits, in the form of (sub)routes, components and helpers. Keep in mind
 that you cannot call arbitrary javascript from templates. Templates in Ember
 are strictly declarative. 
+{% endraw %}
 
 ## Routes
 
@@ -80,6 +82,7 @@ is set up however, information about the current route is not always available
 everywhere. You should almost never do anything with a route, except to link to
 them.
 
+{% raw %}
 Routes have an associated template, which renders 'somewhere' on the page. You,
 of course, control this 'somewhere'. When you put `{{outlet}}` in your
 template, that is the spot where a subroute will render. Ember adds on top of
@@ -87,6 +90,7 @@ this the idea of an *application*, which has its own template (but no route).
 If this template does not have an outlet, nothing will render. So toplevel
 routes (such as `index`) will render in the application template's outlet.
 Subroutes render in their parent route's outlet, if it exists.
+{% endraw %}
 
 The bit where you put your logic and event handling is called a *view*. The bit
 where you put your html markup is called a *template*. Apart from these two
@@ -106,10 +110,12 @@ Be careful about overusing components; they are no replacement for routes
 the active tab described above), you should use subroutes instead of
 components.
 
+{% raw %}
 To include a component in your template, simply put it in handlebars:
 `{{my-component}}`. In the future, you'll also be able to use a more html-like
 syntax: `<my-component></my-component>`. In order to support that syntax, the
 Ember team decided that every component must have a dash (-) in its name.
+{% endraw %}
 
 Again, the bit where you put your logic and event handling is called a *view*.
 The bit where you put your html markup is called a *template*. Unlike routers,
@@ -161,4 +167,3 @@ looking out for a better way to structure your app.
 
 Next time, we'll look into how your Ember app is structured and we'll get
 started on a sample project that brings everything together.
-{% endraw %}
