@@ -3,7 +3,6 @@ layout: post
 published: true
 comments: true
 tags: [ember]
-category: articles
 excerpt: On the various components of Ember and how they relate
 title: Getting started with Ember.js: Part 1
 ---
