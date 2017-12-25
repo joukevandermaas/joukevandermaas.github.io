@@ -1,3 +1,23 @@
-remote_theme: sharu725/hagura
-analytics: ""
-title: hello
+title: Hello
+baseurl: /
+email: mail@jvdmaas.com
+
+highlighter: rouge
+markdown: kramdown
+
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+sass:
+ style: compressed
+
+gems: [jekyll-seo-tag, jekyll-paginate]
